@@ -1,0 +1,52 @@
+.controls {
+  width: max-content;
+  margin-inline: auto;
+}
+
+button {
+  font-size: 1.5rem;
+  margin: 8px;
+  width: 150px;
+}
+.carousel {
+  outline: 2px solid black;
+  overflow: hidden;
+  display: flex;
+  width: 600px;
+  height: 400px;
+
+  margin: auto;
+  background-color: antiquewhite;
+}
+
+img {
+  transition: all 1s ease;
+  width: 100%;
+  height: 100%;
+  /* animation: moveSideWays 15s ease 5s infinite; */
+}
+
+.previous {
+  transform: translate(-100%, 0);
+}
+
+.next {
+  transform: translate(100%, 0);
+}
+@keyframes moveSideWays {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  33% {
+    transform: translate(-100%, 0);
+  }
+
+  66% {
+    transform: translate(-200%, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
